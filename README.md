@@ -17,7 +17,7 @@ Observed schema:
 
 The pipeline normalizes the workbook to `state`, `date`, `sales`, and `category`, then aggregates total sales by `state` and `date`. Because the assignment asks for weekly forecasts and the source dates are irregular, the backend resamples each state to a regular weekly `W-SUN` time index and imputes missing state-weeks with time interpolation, forward fill, back fill, and a final zero fallback.
 
-## Architecture
+# Architecture
 
 ```text
 data/sales_data.xlsx
@@ -31,7 +31,7 @@ frontend/                  forecasting dashboard
 artifacts/latest/          generated forecasts and model comparison JSON
 ```
 
-## Project Structure
+# Project Structure
 
 ```
 state-sales-forecasting/
@@ -151,7 +151,7 @@ FastAPI automatically serves `frontend/dist/index.html` and `frontend/dist/asset
 
 FastAPI also exposes OpenAPI docs at `/docs`.
 
-## Screendhots
+# Screendhots
 
 <img width="1600" height="808" alt="image" src="https://github.com/user-attachments/assets/bdcd488f-88bd-4fbd-b058-87df10293a8d" />
 <img width="1600" height="807" alt="image" src="https://github.com/user-attachments/assets/a2116e1b-71a8-4a1f-a278-e7ceae1e9ce8" />
@@ -203,9 +203,9 @@ Rolling and lag features are shifted so the target week is not used to predict i
 - Video script: `docs/video_walkthrough.md`
 
 
-## BY
-# Name: Mohitha Bandi
-# E-maail: mohitha12026@gmail.com
-# Contact: +91 8523015795
-# College: Woxsen University
+#  BY
+## Name: Mohitha Bandi
+## E-maail: mohitha12026@gmail.com
+## Contact: +91 8523015795
+## College: Woxsen University
 
